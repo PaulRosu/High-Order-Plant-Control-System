@@ -1,0 +1,30 @@
+# Build and Cache directories
+build/
+.cache/
+.vscode/
+
+# CMake files
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+
+# Qt-specific
+*.pro.user
+moc_*.cpp
+qrc_*.cpp
+ui_*.h
+*.qm
+
+# Compiled files
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+
+# OS-specific
+.DS_Store
+.directory
+.Trash-*
