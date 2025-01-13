@@ -32,13 +32,13 @@ The implementation consists of two main components:
 
 The system models cursor location using state equations for position, velocity, and acceleration, with jerk as the control input:
 
-latex
+```math
 \begin{aligned}
-x(k+1) &= x(k) + \Delta t \, v_x(k), \\
-v_x(k+1) &= v_x(k) + \Delta t \, a_x(k), \\
-a_x(k+1) &= a_x(k) + \Delta t \, j_x(k),
+x(k+1) &= x(k) + \Delta t \, v_x(k) \\
+v_x(k+1) &= v_x(k) + \Delta t \, a_x(k) \\
+a_x(k+1) &= a_x(k) + \Delta t \, j_x(k)
 \end{aligned}
-
+```
 
 ## Performance Results
 
@@ -115,12 +115,13 @@ Paul Rosu
 
 If you use this work in your research, please cite:
 
-bibtex
+```bibtex
 @article{RosuPolynomial2024,
-title={Polynomial-Based Path Planning with Direct Jerk and Snap Control},
-author={Rosu, Paul},
-year={2024}
+    title={Polynomial-Based Path Planning with Direct Jerk and Snap Control},
+    author={Rosu, Paul},
+    year={2024}
 }
+```
 
 For more information and access to all source code and result files, visit the [project repository](https://github.com/PaulRosu/High-Order-Plant-Control-System).
 
