@@ -594,8 +594,11 @@ void MainWindow::handleDataTimeout()
         // Reset the lastStopFlag static variable in processGameData
         lastGameStopFlag = true;
 
-        // Schedule center click after 2 seconds
-        QTimer::singleShot(2000, this, &MainWindow::clickScreenCenter);
+        // Only auto-restart if checkbox is checked
+        if (ui->autoRestartCheckbox->isChecked()) {
+            // Schedule center click after 2 seconds
+            QTimer::singleShot(2000, this, &MainWindow::clickScreenCenter);
+        }
     }
 }
 
